@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rede.Social.Server.Aplication", "Rede.Social.Server.Aplication\Rede.Social.Server.Aplication.csproj", "{A3B2B72F-1399-4413-B825-0CE6FDBA9C51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rede.Social.Server.Repository", "Rede.Social.Server.Repository\Rede.Social.Server.Repository.csproj", "{C1F74499-0A4C-466D-811C-2396CC6794D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rede.Social.Server.WebApi", "Rede.Social.Server.WebApi\Rede.Social.Server.WebApi.csproj", "{B09864E6-15C3-4152-8E55-C3DDFAAD05F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rede.Social.Server.Infra.IoC", "Rede.Social.Server.Infra.IoC\Rede.Social.Server.Infra.IoC.csproj", "{746127B1-5BEE-4F8D-98D7-D01828E7005D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rede.Social.Server.Infra.Data", "Rede.Social.Server.Infra.Data\Rede.Social.Server.Infra.Data.csproj", "{55565B01-5C96-45E8-BA42-7D56533EF04F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3B2B72F-1399-4413-B825-0CE6FDBA9C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B2B72F-1399-4413-B825-0CE6FDBA9C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B2B72F-1399-4413-B825-0CE6FDBA9C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B2B72F-1399-4413-B825-0CE6FDBA9C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F74499-0A4C-466D-811C-2396CC6794D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F74499-0A4C-466D-811C-2396CC6794D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F74499-0A4C-466D-811C-2396CC6794D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F74499-0A4C-466D-811C-2396CC6794D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09864E6-15C3-4152-8E55-C3DDFAAD05F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09864E6-15C3-4152-8E55-C3DDFAAD05F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09864E6-15C3-4152-8E55-C3DDFAAD05F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09864E6-15C3-4152-8E55-C3DDFAAD05F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{746127B1-5BEE-4F8D-98D7-D01828E7005D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746127B1-5BEE-4F8D-98D7-D01828E7005D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746127B1-5BEE-4F8D-98D7-D01828E7005D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746127B1-5BEE-4F8D-98D7-D01828E7005D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55565B01-5C96-45E8-BA42-7D56533EF04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55565B01-5C96-45E8-BA42-7D56533EF04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55565B01-5C96-45E8-BA42-7D56533EF04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55565B01-5C96-45E8-BA42-7D56533EF04F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
