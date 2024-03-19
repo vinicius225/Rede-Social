@@ -51,11 +51,6 @@ private string GenerateToken()
     var issuer = _configuration["JwtSettings:Issuer"];
     var secret = _configuration["JwtSettings:Secret"];
 
-    // Verificar se a chave tem pelo menos 256 bits
-    if (Encoding.UTF8.GetBytes(secret).Length * 8 < 256)
-    {
-        throw new InvalidOperationException("A chave secreta deve ter pelo menos 256 bits (32 bytes) para o algoritmo HMAC-SHA256.");
-    }
 
     var tokenHandler = new JwtSecurityTokenHandler();
     var key = Encoding.ASCII.GetBytes(secret);
