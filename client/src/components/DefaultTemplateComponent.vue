@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView } from 'vue-router';
+import { RouterView, RouterLink } from 'vue-router';
 import { ref } from 'vue';
 const selectedKeys = ref(['2']);
 </script>
@@ -18,7 +18,9 @@ const selectedKeys = ref(['2']);
           :style="{ lineHeight: '64px' }"
         >
         <didv class="menu">
-          <a-menu-item key="1">nav 1</a-menu-item>
+          <RouterLink to="/login">
+         Login
+        </RouterLink>
           <a-menu-item key="2">nav 2</a-menu-item>
           <a-menu-item key="3">nav 3</a-menu-item>
         </didv>
