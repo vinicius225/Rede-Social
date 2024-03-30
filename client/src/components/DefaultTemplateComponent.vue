@@ -57,6 +57,9 @@ const selectedKeys = ref(['2']);
       </a-layout-content>
       <a-layout-footer :style="{ textAlign: 'center', position: 'fixed', bottom: 0, width: '100%', zIndex: 1 }">
         Vinicius Andrade ©
+        <RouterLink to="/about">
+          Sobre
+         </RouterLink>
       </a-layout-footer>
     </a-layout>
 </div>

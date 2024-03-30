@@ -55,42 +55,5 @@ const formState = reactive({
 </template>
 
 <style scoped>
-body {
-    overflow: hidden;
-    background-color: #414A50;
-}
 
-.container {
-    width: 50%;
-    background-color: #CAEDDE;
-    margin-left: 50vh;
-    margin-right: 50vh;
-    margin-top: 30vh;
-    border-radius: 10px;
-}
-
-.button {
-    width: 100%;
-
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-@media(max-width: 500px) {
-    .container {
-        width: 100%;
-        background-color: #CAEDDE;
-        margin-left: 0;
-        margin-top: 30vh;
-        border-radius: 10px;
-
-    }
-    .form{
-            display: flex;
-    justify-content: center;
-    }
-}
 </style>

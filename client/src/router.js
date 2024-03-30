@@ -1,8 +1,10 @@
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createWebHashHistory, createRouter } from "vue-router";
 import Login from "./pages/Login.vue";
 import Home from "./pages/Home.vue";
 import About from './pages/About.vue'
+import Register from './pages/Register.vue'
 import DefaultTemplateComponent from "./components/DefaultTemplateComponent.vue";
+import TemplateExternalComponernt from './components/TemplateExternalComponernt.vue'
 
 const routes = [
   {
@@ -15,14 +17,23 @@ const routes = [
     ],
   },
   {
+    component: TemplateExternalComponernt,
     path: "/login",
     name: "login",
-    component: Login,
+    children : [
+      {path : "/login", component:Login},
+      {path : "/register", component:Register},
+    ]
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: Register,
   },
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
