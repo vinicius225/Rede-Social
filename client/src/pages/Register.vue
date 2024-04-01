@@ -117,14 +117,14 @@ const countries = ref([
             </a-row>
 
             <a-row style="display: flex; justify-content: center;">
-                <a-col :xs="20" :sm="16" :md="12" :lg="20">
+                <a-col :span="16">
                     <a-form-item>
                         <a-button type="primary" class="button" html-type="submit">Cadastrar</a-button>
                     </a-form-item>
                 </a-col>
             </a-row>
             <a-row style="display: flex; justify-content: center;">
-                <a-col :xs="20" :sm="20" :md="20" :lg="20">
+                <a-col :span="16">
                     <a-form-item>
                         <RouterLink to="/register">
                             <a-button type="default" class="button" html-type="submit">Voltar</a-button>
