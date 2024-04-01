@@ -50,7 +50,8 @@ body {
         width: 100%;
         background-color: #CAEDDE;
         margin-left: 0;
-        margin-top: 30vh;
+        margin-top: 0;
+        padding-bottom:  100%;
         border-radius: 10px;
 
     }
@@ -58,5 +59,6 @@ body {
             display: flex;
     justify-content: center;
     }
+    
 }
 </style>

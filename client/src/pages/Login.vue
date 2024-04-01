@@ -19,7 +19,7 @@ const formState = reactive({
             autocomplete="off" @finish="onFinish" @finishFailed="onFinishFailed">
             <a-row>
                 <a-col :xs="20" :sm="16" :md="12" :lg="20">
-                    <a-form-item label="Username" name="username"
+                    <a-form-item label="Login" name="username"
                         :rules="[{ required: true, message: 'Please input your username!' }]">
                         <a-input v-model:value="formState.username" />
                     </a-form-item>
@@ -27,7 +27,7 @@ const formState = reactive({
             </a-row>
             <a-row>
                 <a-col :xs="20" :sm="16" :md="12" :lg="20">
-                    <a-form-item label="Password" name="password"
+                    <a-form-item label="Senha" name="password"
                         :rules="[{ required: true, message: 'Please input your password!' }]">
                         <a-input-password v-model:value="formState.password" />
                     </a-form-item>
