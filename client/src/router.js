@@ -1,4 +1,5 @@
 import { createWebHashHistory, createRouter } from "vue-router";
+import store from "./store";
 import Login from "./pages/Login.vue";
 import Home from "./pages/Home.vue";
 import About from './pages/About.vue'
@@ -12,7 +13,7 @@ const routes = [
     name: "home",
     component: DefaultTemplateComponent,
     children: [
-      { path: "/", component: Home },
+      { path: "/", component: Home,meta: { auth:true} },
       { path: "/about", component: About },
     ],
   },
@@ -36,5 +37,16 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
-
+router.beforeEach((to, from, next) => {
+	if (
+		to.matched.some((record) => record.meta.auth) &&
+		!store.getters.isAuthenticated
+	) {
+		next({
+			name: "login",
+		});
+	} else {
+		next();
+	}
+});
 export default router;
