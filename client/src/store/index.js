@@ -1,22 +1,26 @@
-import { createApp } from 'vue'
-import { createStore } from 'vuex'
+import { createStore, createLogger } from 'vuex'
 
-// Create a new store instance.
+// Defina o estado como um objeto
+const state = {
+  user: {
+    nome: '',
+    login: '',
+    perfil: [],
+    token: ''
+  }
+}
+
+// Crie uma nova instância de store Vuex
 const store = createStore({
-  state () {
-    return {
-      count: 0
-    }
-  },
+  state,
   mutations: {
-    increment (state) {
+    increment(state) {
       state.count++
     }
-  }
+  },
+  plugins: process.env.NODE_ENV !== 'production'
+    ? [createLogger()]
+    : []
 })
 
-const app = createApp({ /* your root component */ })
-
-// Install the store instance as a plugin
-app.use(store)
-export default store;
+export default store

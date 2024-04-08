@@ -1,11 +1,13 @@
-export default({instante}) =>{
+export default ({ instance }) => {
     const api = {
-        register(user){
-            return instante({
-                method:"post",
-                url:"user/register",
-                data : user
-            })
+        registerUser(user) {
+            return instance({
+                method: "post",
+                url: "user/register", // Verifique se o caminho da URL está correto
+                data: user
+            });
         }
-    }
-}
+    };
+
+    return api;
+};
